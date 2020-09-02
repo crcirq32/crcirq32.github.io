@@ -1,0 +1,84 @@
+body{
+  background-color: lightyellow;
+  background-image: url("");
+}
+
+h1{
+   border-left: 2px dashed black;
+   border-bottom: 2px dashed black;
+   background-color: #ffedff;
+   align-content: center;
+}
+
+h2{
+   border-left: 2px dashed black;
+   border-bottom: 2px dashed black;
+   background-color: lightyellow;
+   align-content: center;
+   font-family: cursive;
+}
+
+h3{
+   border-left: 2px dashed gold;
+   border-bottom: 2px dashed gold;
+   background-color: lightyellow;
+   align-content: center;
+}
+
+h4{
+  border-left: 2px dashed gold;
+  border-bottom: 2px dashed gold;
+  background-color: lightyellow;
+  align-content: center;
+}
+
+form{
+  border:2px;
+  border-color: gold;
+}
+
+p{
+  font-family: arial;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15;
+}
+
+table, th, td{
+  border: 1px solid purple;
+  font-size: 13px;
+  align-content: center;
+  font-family: arial;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+img{
+  align: center;
+}
+
+ul{
+  list-style-type:none;
+  margin:20;
+  padding:20;
+  align-content: center;
+  overflow: hidden;
+  font-size:14px;
+  background-color:lightyellow;
+  font-style: oblique;
+  font-family: cursive;
+  border-left: 1px dashed black;
+  border-bottom: 1px dashed black;
+  border-top: 1px dashed black;
+  border-right: 1px dashed black;
+}
+
+.active{
+  background-color: #ffedff;
+  border-left: 1px dashed gold;
+  border-right: 1px dashed gold;
+}
+
+li {float: left;}
+li a {display:block; color: Black; text-align:center; padding: 10px 10px; text-decoration:none;}
+li a:hover{background-color:lightyellow;}

@@ -1,0 +1,58 @@
+<html>
+<header>
+  <ul>
+    <li><a href="/home/loxytocin/Desktop/Website/login.html">Entry</a></li>
+    <li><a href="/home/loxytocin/Desktop/Website/netsec.html">Network Security</a></li>
+    <li><a href="/home/loxytocin/Desktop/Website/research.html">Research</a></li>
+    <li><a class="active" href="/home/loxytocin/Desktop/Website/linux.html">Linux</a></li>
+    <li><a href="/home/loxytocin/Desktop/Website/arduino.html">Arduino</a></li>
+    <li><a href="/home/loxytocin/Desktop/Website/contact.html">Contact Us</a></li>
+    <li><a href="/home/loxytocin/Desktop/Website/aboutme.html">About Me</a></li>
+    <li><a href="/home/loxytocin/Desktop/Website/course.html">Offered Courses</a></li>
+  </ul>
+<link rel="stylesheet" Type="text/css" href="/home/loxytocin/Desktop/Website/login.css"></a>
+</header>
+<body>
+<h2><center>Linux is incredible, and Free!!</center></h2>
+
+<div>
+
+  <h4> Linux utitlities to help </h4>
+    <p><font size="2" class="arial">
+            Linux is one of the most incredible pieces of technology there is, there is so much meaningful information
+            that can be displayed through simple Linux commands. Below are some of my personal favorite Linux services.
+    </font></p>
+
+    <h4>Ukuu</h4>
+        <p><font size="2" class="arial">
+            The great thing about Ukuu is being able to update your kernel to any released version that is available.
+            When you first start the computer up, enter the BIOS menu and you are able to select the kernel desired.
+            If the box breaks than all you need to do is return to the BIOS menu and reselect the desired kernel. An interesting fact is the information provided with the kernel number. The current kernel is 5.4.0; if the second number is even then it signifys the kernel is stable. If the middle number is odd then the kernel is more bleeding edge(more bugs/beta testing).
+        </font></p>
+
+    <h4>IPTables (compareable to UFW)</h4>
+        <p><font size="2" class="arial">
+	Setting up your own firewall rules is crucial. I usually limit access to port 22 (SSH), port 80/8080 (HTTP/HTTPS), and port 20 (FTP). The utitiles that are most suspect are the file sharing services. Wget, curl, ftp, telnet are the known file sharing services, so limiting port access to these is a great start to securing your system. The learning curve for this is rather steep (compared to UFW/GUFW) but the rules are stable. <a href="">Here is a good tutorial</a> with good examples to get iptables working.
+        </font></p>
+
+    <h4>AppArmor</h4>
+        <p><font size="2" class="Times New Romain">
+	AppArmor is a preinstall service that allows for the auditing of profiles or services. This service allows for the configuration of kernel programs and the allocation of resources. By placing a speific service in "enforcement" mode will report any policy violation into syslogd. You have the ability to download blacklisted profiles in order to stregthen your system further. There are firefox profiles that will grant specific resources to the browser and will Allow or deny requests. I find this very useful, another great addition to apparmor is firejail. Firejail can load any service into its own sandbox environment in order to keep the resources separated.        
+</font></p>
+
+</div>
+<font size=1>
+<form><center>
+<td><a href="/home/loxytocin/Desktop/Website/login.html">Entry</a>
+<td><a href="/home/loxytocin/Desktop/Website/netsec.html">Network Security</a>
+<td><a href="/home/loxytocin/Desktop/Website/research.html">Research</a>
+<td><a class="active" href="/home/loxytocin/Desktop/Website/linux.html">Linux</a>
+<td><a href="/home/loxytocin/Desktop/Website/arduino.html">Arduino</a>
+<td><a href="/home/loxytocin/Desktop/Website/contact.html">Contact Us</a>
+<td><a href="/home/loxytocin/Desktop/Website/aboutme.html">About Me</a>
+<td><a href="/home/loxytocin/Desktop/Website/course.html">Offered Courses</a>
+</center></form></font>
+
+</body>
+
+</html>
