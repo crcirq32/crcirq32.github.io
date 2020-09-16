@@ -61,7 +61,7 @@
 	</table></center></font> 
 	</p>
 	<br><br>
-	<h2><center>Inspect Element</center></h2>
+	<h2><center>Inspect Element</center></h2><br>
 	<p><font size="2" class="Times">
 		When visiting a website, right click on the mouse, and there will be an option to "Inspect Element".
 		This will show the various communication and programming languages behind the scenes of the website.
@@ -69,16 +69,16 @@
                 There is also a lot of cross communication between these languages on a client (Your local device) and server side
 		(The company's interweb domain). These different types of communication allow for a functioning domain.
 		Below is a list of a few languages.
-                            <br>
+	</p>               <br><br>
 	<li><center><font size="2">
-            <li><u>HTML</u> (Hyper Text Markup Language): base frame of website.</li><br>
-            <li><u>CSS</u> (Cascading Style Sheet): styling for website.</li><br>
-            <li><u>PHP</u> (Hypertext Preprocessor): client to server means for comminucation, similarities with HTML.</li><br>
-            <li><u>Javascript</u> - extra functionality and design to a website.</li><br>
-	</li></center>
+            	<li><u>HTML</u> (Hyper Text Markup Language): base frame of website.</li><br>
+            	<li><u>CSS</u> (Cascading Style Sheet): styling for website.</li><br>
+            	<li><u>PHP</u> (Hypertext Preprocessor): client to server means for comminucation, similarities with HTML.</li><br>
+            	<li><u>Javascript</u> - extra functionality and design to a website.</li><br>
+	</li></center><br><br>
 </div>
 
-        <p><font size="2" class="Times">
+        <p><font size="2" class="Times"><br>
                 The above list shows the more known languages of webdev. Unfortunately, Javascript is notoriously known for bugs. Luckily for Linux, everything is considered to be it's own file.
 		This is great for a security stand point, it makes worms and viruses more difficult to proliferate. It's a brilliant means to compartamentalize.
 	</p>
@@ -93,37 +93,32 @@
                 Another amazing feat of ClamAV is it does not have to scan the entire computer system, 
 	        with the ability to scan directories and individual files, ClamAV gives a range of security, 
 	        from a system wide scan to a sketchy file downloaded from the interwebs.
-		<center><img src="/crcirq32.github.io/clam1.png"><br><br></center>
-        </p>
+		<center><img src="/crcirq32.github.io/clam1.png"><br><br></center></p>
              
         <p><font size="2" class="Times">
                 Below are some of the hiccups I had during install. There are a couple steps to get this scanning service up and running. I have found that after the "apt install" a service named "freshclam" begins to run.
                 This is a script to check to see if ClamAV is up to date and a quick configuratioin with the system hardware. After install if the command "ps aux | grep freshclam" is executed you will notice it running. The only way I could get freshclam to work is completely restart the freshclam service.
-                "sudo pkill -15 -x freshclam" then "sudo freshclam" allowed for the update of ClamAV.
-        </p>
+                "sudo pkill -15 -x freshclam" then "sudo freshclam" allowed for the update of ClamAV.</p>
         
 	<h2> Helpful ClamAV commands</h2>
         <p><font size="2" class="Times">
                 After creating a directory for ClamAV (sudo mkdir ~/Desktop/ClamScan) you have the abililty to scan and send all of the suspect files to that folder. Linux allows you can contain the suspect files in a quaratined folder (Don't forget to remove the permissions).
                 With the proper persmissions set for this directory it isolates the files away from the system. I setup a <a href="https://www.man7.org/linux/man-pages/man5/crontab.5.html">Crontab</a> in order for ClamAV to run at 3am once a week.
-                <center><img src="/crcirq32.github.io/crontab.png"><br></center>
-	</p>	
+                <center><img src="/crcirq32.github.io/crontab.png"><br><br></center></p>	
 		
         <p><font size="2" class="Times">
-                The crontab above will run clamscan with -r which will remove the files. The next piece "--move=" will move the suspect files. "~/Desktop/ClamScan" will be the location to send the files and "/*" specifies ClamAV to scan the entire root directory.
-	</p>
+                The crontab above will run clamscan with -r which will remove the files. The next piece "--move=" will move the suspect files. "~/Desktop/ClamScan" will be the location to send the files and "/*" specifies ClamAV to scan the entire root directory.</p>
 		
-	<h2><b><center>Lynis</center></b></h2>
+	<h2><center>Lynis</center></h2>
         <p><font size="2" class="Times">
                 Lynis is a great utility that will scan or audit a computer system, Lynis will return recommendations, warnings, and ways to harden the current system.
                 As the screenshot below shows that I'm not great at setting up user permissions and password aging. My favorite part about Lynis is at the end of it's diagnostic testing, it spits out a "Hardening Index".
                 An enjoyable and extremely productive game I like to play is trying to obtain the highest possible "Hardening Index" score.<br>
-                <center><img src="/crcirq32.github.io/lynisusr.png"><br></center>
-        </p>
+                <center><img src="/crcirq32.github.io/lynisusr.png"><br><br></center></p>
                             
 	<p><font size="2" class="Times">
                 The photo below shows the current box has an Hardening index of 55. Clearly, a very insecure system.<br></p>
-                <center><img src="/crcirq32.github.io/lynisscore.png"><br></center></p>
+                <center><img src="/crcirq32.github.io/lynisscore.png"><br><br></center></p>
 </div>
 <br>
 
