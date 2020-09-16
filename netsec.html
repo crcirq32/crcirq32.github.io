@@ -60,7 +60,7 @@
                 <td>ARP</td><td>Address Resolution Protocol</td><td>Used by IP to find hardware.</td><br></tr><tr>
 	</table></center></font> 
 	</p>
-	
+	<br><br>
 	<h2><center>Inspect Element</center></h2>
 	<p><font size="2" class="Times">
 		When visiting a website, right click on the mouse, and there will be an option to "Inspect Element".
@@ -84,7 +84,7 @@
 	</p>
 
 
-        <h4><b><center>ClamAV</b></h4>
+	<h2><center>ClamAV</center></h2>
         <p><font size="2" class="Times">
                 ClamAv is simple and quick virus scanner, ClamAv can be installed with <b>"apt-get install clamav"</b>
 		<center><img src="/crcirq32.github.io//clammany.png"><br><br></center></p>
@@ -102,7 +102,7 @@
                 "sudo pkill -15 -x freshclam" then "sudo freshclam" allowed for the update of ClamAV.
         </p>
         
-	<h4> Helpful ClamAV commands</h4>
+	<h2> Helpful ClamAV commands</h2>
         <p><font size="2" class="Times">
                 After creating a directory for ClamAV (sudo mkdir ~/Desktop/ClamScan) you have the abililty to scan and send all of the suspect files to that folder. Linux allows you can contain the suspect files in a quaratined folder (Don't forget to remove the permissions).
                 With the proper persmissions set for this directory it isolates the files away from the system. I setup a <a href="https://www.man7.org/linux/man-pages/man5/crontab.5.html">Crontab</a> in order for ClamAV to run at 3am once a week.
@@ -113,7 +113,7 @@
                 The crontab above will run clamscan with -r which will remove the files. The next piece "--move=" will move the suspect files. "~/Desktop/ClamScan" will be the location to send the files and "/*" specifies ClamAV to scan the entire root directory.
 	</p>
 		
-	<h4><b><center>{~}Lynis{~}</center></b></h4>
+	<h2><b><center>Lynis</center></b></h2>
         <p><font size="2" class="Times">
                 Lynis is a great utility that will scan or audit a computer system, Lynis will return recommendations, warnings, and ways to harden the current system.
                 As the screenshot below shows that I'm not great at setting up user permissions and password aging. My favorite part about Lynis is at the end of it's diagnostic testing, it spits out a "Hardening Index".
