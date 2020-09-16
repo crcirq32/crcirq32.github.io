@@ -68,8 +68,8 @@
 		There are many different computer languages that go into crafting a webtsite.
                 There is also a lot of cross communication between these languages on a client (Your local device) and server side
 		(The company's interweb domain). These different types of communication allow for a functioning domain.
-		Below is a list of a few languages.
-	</p>               <br><br>
+		Below is a list of a few languages.</p><br><br>
+		
 	<li><center><font size="2">
             	<li><u>HTML</u> (Hyper Text Markup Language): base frame of website.</li><br>
             	<li><u>CSS</u> (Cascading Style Sheet): styling for website.</li><br>
@@ -100,7 +100,7 @@
                 This is a script to check to see if ClamAV is up to date and a quick configuratioin with the system hardware. After install if the command "ps aux | grep freshclam" is executed you will notice it running. The only way I could get freshclam to work is completely restart the freshclam service.
                 "sudo pkill -15 -x freshclam" then "sudo freshclam" allowed for the update of ClamAV.</p>
         
-	<h2> Helpful ClamAV commands</h2>
+	<h2><center>Helpful ClamAV hints</center></h2>
         <p><font size="2" class="Times">
                 After creating a directory for ClamAV (sudo mkdir ~/Desktop/ClamScan) you have the abililty to scan and send all of the suspect files to that folder. Linux allows you can contain the suspect files in a quaratined folder (Don't forget to remove the permissions).
                 With the proper persmissions set for this directory it isolates the files away from the system. I setup a <a href="https://www.man7.org/linux/man-pages/man5/crontab.5.html">Crontab</a> in order for ClamAV to run at 3am once a week.
